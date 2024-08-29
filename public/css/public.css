@@ -1,0 +1,143 @@
+:root{
+    --main-col: #ffa123;
+    --sec-col:#081800;
+    --background-col:#f3f3f3;
+}
+*{
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; /** for defining glopal box sizing on firefox**/
+	box-sizing: border-box;
+}
+body {
+  font-family: "Playwrite PL", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/* Small Screens */
+@media (min-width: 768px){
+    .container{
+      width:750px;
+    }
+  }
+  /** medium screens **/
+  @media (min-width: 970px){
+    .container{
+      width:970px;
+    }
+  }
+  /** large screens **/
+  @media (min-width: 1200px){
+    .container{
+      width:1170px;
+    }
+  }
+a{
+    text-decoration: none;
+}
+/*Header begins*/
+body .header{
+    background-color: var(--background-col);
+}
+body .header .container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+body .header .container .MainIcon{
+    display: flex;
+    flex-wrap: wrap;
+}
+body .header .container .MainIcon i{
+    font-size: 50px;
+}
+body .header .container .MainIcon font{
+    font-weight: 800;
+}
+body .header .container .MainIcon h3{
+    font-weight: 400;
+}
+body .header .container .icons{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.header .container .icons .item:hover{
+font-weight: 800;
+}
+body .header .container .icons .item{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;  
+}
+body .header .work{
+    border-style: solid;
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 20%;
+    justify-content: center;
+}
+body .header .work i{
+    color: var(--main-col);
+    margin-left: 5px;
+    align-self: center;
+    margin-top: 1px;
+}
+@media(max-width:1200px){
+    body .header .container .MainIcon i{
+        font-size: 30px;
+    }
+    body .header .container .MainIcon h3{
+        font-size: 1em;
+    }
+    body .header .container .icons .item{
+        font-size: 18px;
+    }
+    body .header .container .work{
+        font-size: 18px;
+    }
+}
+@media (max-width:768px){
+    body .header .container .MainIcon i{
+        font-size: 18px;
+    }
+    body .header .container .MainIcon h3{
+        font-size: 0.6em;
+    }
+    body .header .container .icons{
+        margin-left: 10px;
+    }
+    body .header .container .icons .item{
+        font-size: 10px;   
+     }
+    body .header .container .work{
+        font-size: 10px;
+        margin-left: 5px;
+        border-width: 7px;
+        }
+}
+/* Header Ends*/

@@ -1,0 +1,157 @@
+:root{
+    --main-col: #ffa123;
+    --sec-col:#081800;
+    --background-col:#f3f3f3;
+}
+/* Main Area Begins */
+.mainarea{
+    position: relative;
+}
+.mainarea .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+}
+.mainarea .container .name h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    color: var(--sec-col);
+}
+.mainarea .container .image{
+    padding-top: 5%;
+    position: relative;
+    min-width: 180px;
+    transition: 0.3s;
+}
+.mainarea .container .image img{
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--sec-col);
+    width: 100%;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.mainarea .container .image::before{
+    content: "";
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--sec-col);
+    position: absolute;
+    width: calc(100% - 19.2px);
+    height: 25px;
+    background-color: var(--main-col);
+    transition: 0.3s;
+}
+.mainarea .container .image i{
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--sec-col);
+    position: absolute;
+    font-size: 25px;
+    background-color: white;
+    transition: 0.3s;
+}
+/* Main Area Ends */
+/* Potfolio begins */
+.Footer{
+    top: 70%;
+    z-index: -1;
+    height: 35vh;
+    position: absolute;
+    background-color: var(--sec-col);
+    width: 100%;
+    border-radius: 70px 70px 0 0;
+}
+.Footer .container h3{
+    position: absolute;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    max-width: 50%;
+    word-spacing: 0px;
+    left: 3%;
+    top: 5%;
+    padding: 1px;
+}
+/* Portfolio Ends */
+@media (max-width:970px){
+    .mainarea .container .name h1{
+        font-size: 80px;
+    }
+  /*  .mainarea .container .image{
+        display: none;
+    }*/
+    .mainarea .container .image{
+        width: 60%;
+        justify-self: right;
+    }
+}
+@media(max-width:1200px){
+    body .header .container .MainIcon i{
+        font-size: 30px;
+    }
+    body .header .container .MainIcon h3{
+        font-size: 1em;
+    }
+    body .header .container .icons .item{
+        font-size: 18px;
+    }
+    body .header .container .work{
+        font-size: 18px;
+    }
+}
+@media (max-width:768px){
+    body .header .container .MainIcon i{
+        font-size: 18px;
+    }
+    body .header .container .MainIcon h3{
+        font-size: 0.6em;
+    }
+    body .header .container .icons{
+        margin-left: 10px;
+    }
+    body .header .container .icons .item{
+        font-size: 10px;   
+     }
+    body .header .container .work{
+        font-size: 10px;
+        margin-left: 5px;
+        border-width: 7px;
+        }
+        .Footer .container h3{
+            font-size: 18px;
+        }
+}
+@media (max-width:480px) {
+    .mainarea .container{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+        .mainarea .container .name h1{
+        font-size: 60px;
+    }
+    .mainarea .container .image{
+        position: fixed;
+        top: 45%;
+        }
+}
+/* Small Screens */
+@media (min-width: 768px){
+    .container{
+      width:750px;
+    }
+  }
+  /** medium screens **/
+  @media (min-width: 970px){
+    .container{
+      width:970px;
+    }
+  }
+  /** large screens **/
+  @media (min-width: 1200px){
+    .container{
+      width:1170px;
+    }
+  }

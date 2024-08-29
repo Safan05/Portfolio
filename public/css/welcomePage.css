@@ -1,0 +1,21 @@
+/*General rules*/
+:root{
+    --main-col: #ffa123;
+    --sec-col:#081800;
+    --background-col:#f3f3f3;
+}
+/* Landing Starts */
+.landing{
+    position: relative;
+    background-color: var(--main-col);
+    height: calc(100vh - 64px);
+}
+.landing .container h1{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 30%;
+    left:50%;
+    translate: -50% -50%;
+    font-size: 70px;
+}
+/* Landing Ends */

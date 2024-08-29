@@ -1,0 +1,81 @@
+:root{
+    --main-col: #ffa123;
+    --sec-col:#081800;
+    --background-col:#f3f3f3;
+}
+body{
+background-image: linear-gradient(to left, var(--main-col) 5%, var(--sec-col) 95%);
+}
+.landing{
+    position: relative;
+    height: calc(100vh - 55px);
+}
+.landing .SignCard{
+    display: flex;
+    flex-direction: column;
+    width: max(30%, 300px);
+    height: 500px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: black 0px 0px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.landing .SignCard h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    color:var(--sec-col);
+    font-size: 3rem;
+}
+.landing form{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+    width: min(400px, 100%);
+}
+.landing .SignCard input{
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    margin-left: 0px;
+    border-width: 3px;
+    background-color: gainsboro;
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+}
+.landing .SignCard #signup{
+    background-image: linear-gradient(to left, var(--main-col) 5%, purple 95%);
+    border: none;
+}
+.landing .in{
+    display: flex;
+}
+.landing .SignCard button{
+    width: 140px;
+    height: 35px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, var(--main-col) 5%, var(--sec-col) 95%);
+    border-width: 3px;
+}
+.landing .SignCard label{
+    background-color: var(--main-col);
+    position: relative;
+    left: 3px;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    position: relative;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
